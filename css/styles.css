@@ -1,0 +1,106 @@
+:root {
+    --primary: #fff;
+    --secondary: #ccc;
+}
+
+* {
+    font-size: 1.03rem;
+    font-weight: 400;
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Geist';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.7rem;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+p {
+    color: var(--secondary);
+}
+
+#main-container {
+    max-width: 678px;
+    width: 97%;
+    margin-top: 8.5rem;
+    font-weight: 300;
+}
+
+#experience-container {
+    display: flex;
+    width: 100%;
+}
+
+#work {
+    /* background-color: red; */
+    width: 50%;
+}
+
+#projects {
+    /* background-color: blue; */
+    width: 50%;
+    padding-left: 5%;
+}
+
+/* Experience cards */
+.experience-header {
+    margin-bottom: 0.5rem;
+    color: var(--secondary)
+}
+
+.experience-card {
+    margin-bottom: 2rem;
+}
+
+.experience-title {
+    margin-bottom: 0.4rem;
+    text-decoration: underline solid var(--secondary) 0.5px;
+}
+
+.experience-subtitle {
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
+
+.experience-description {
+    margin-top: 0.4rem;
+}
+
+/* Links */
+#links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#links-list li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+#links-list a {
+    display: inline-flex;
+    color: var(--secondary);
+    text-decoration: none;
+    transition: color 0.35s, transform 0.25s, text-decoration 0.25s;
+}
+
+#links-list a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 714px) {
+    * {
+        font-size: 0.9rem;
+    }
+}
